@@ -33,21 +33,38 @@ The vagrant-alpine plugin does not offer any configuration options.
 
 ## Development
 
-1. Clone this repository
-1. Run `bundle` -- Use [Bundler](http://gembundler.com) to retrieve dependencies.
-1. Run `bundle exec rake` to verify unit tests with `rake`
-1. Modify/Add specific feature of interest
-1. Modify `Vagrantfile` accordingly for testing the feature
-1. Test with `VAGRANT_LOG=1 bundle exec vagrant up`
+To work on the `vagrant-alpine` plugin, clone this repository, and use
+[Bundler](http://gembundler.com) to get the dependencies:
+
+```
+$ gem install bundler -v '~> 1.7.0'
+$ bundle install --path vendor/bundle
+```
+
+Once you have the dependencies, verify the unit tests pass with `rake`:
+
+```
+$ bundle exec rake
+```
+
+If those pass, you're ready to start developing. You can test
+the plugin without installing it into your Vagrant environment
+by creating a `Vagrantfile` in teh top level directory (it is gitignored).
+There is an example supplied in this repository.
+(`cp Vagrantfile.example Vagrantfile` and edit.)
+
+Use bundler to execute Vagrant:
+```
+$ bundle exec vagrant up
+```
 
 
 ## Notes
 
-Alpine Linux boxes for testing are available on (Atlas)[https://atlas.hashicorp.com/maier/]. Packer templates for building the boxes are in this [GitHub repository](https://github.com/maier/packer-templates/).
+Alpine Linux boxes for testing are available on
+[Atlas](https://atlas.hashicorp.com/maier/). Packer templates
+for building the boxes are in this
+[GitHub repository](https://github.com/maier/packer-templates/).
 
-This was new to me so, as fair warning to help save a bunch of time for someone else in my position. Be aware that an older version of Bundler is required by Vagrant. If `bundle` results in error regarding unsuitable version of bundler see [this issue](https://github.com/mitchellh/vagrant/issues/5581). The following two commands fixed the issue for me, as I already had bundler v1.9.x installed.
-
-```
-$ rvm @global do gem uninstall bundler
-$ gem install bundler -v '~> 1.7.0'
-```
+Using `VAGRANT_LOG=1`, Vagrant's `--debug` switch, and `vb.gui = true`
+were all very useful when originally developing this guest plugin.
