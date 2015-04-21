@@ -34,8 +34,8 @@ The vagrant-alpine plugin does not offer any configuration options.
 ## Development
 
 1. Clone this repository
-1. Run `bundle` to retrieve dependencies
-1. Run `bundle exec rake` to verify unit tests
+1. Run `bundle` -- Use [Bundler](http://gembundler.com) to retrieve dependencies.
+1. Run `bundle exec rake` to verify unit tests with `rake`
 1. Modify/Add specific feature of interest
 1. Modify `Vagrantfile` accordingly for testing the feature
 1. Test with `VAGRANT_LOG=1 bundle exec vagrant up`
