@@ -10,4 +10,6 @@ rvm:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-script: rake
+script:
+  - bundle exec rake
+  - bundle exec rake build
