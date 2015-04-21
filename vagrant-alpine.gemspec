@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Enables Vagrant to manage Alpine Linux Guests.'
   spec.description   = 'Enables Vagrant to manage Alpine Linux Guests.'
-  spec.homepage      = 'https://gihub.com/maier/vagrant-alpine'
+  spec.homepage      = 'https://github.com/maier/vagrant-alpine'
 
   spec.add_development_dependency 'rake', '~> 10.4.2'
   spec.add_development_dependency 'rspec-core', '~> 2.14'
