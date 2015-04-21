@@ -66,5 +66,5 @@ Alpine Linux boxes for testing are available on
 for building the boxes are in this
 [GitHub repository](https://github.com/maier/packer-templates/).
 
-Using `VAGRANT_LOG=1`, Vagrant's `--debug` switch, and `vb.gui = true`
+Using `VAGRANT_LOG=info`, Vagrant's `--debug` switch, and `vb.gui = true`
 were all very useful when originally developing this guest plugin.
