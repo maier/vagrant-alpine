@@ -23,7 +23,7 @@ $ vagrant plugin install vagrant-alpine
 ## Usage
 
 ```
-$ vagrant init maier/alpine-3.1.3
+$ vagrant init maier/alpine-3.1.3-x86_64
 $ vagrant up
 ```
 
