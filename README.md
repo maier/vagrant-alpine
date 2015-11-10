@@ -67,5 +67,8 @@ Alpine Linux boxes for testing are available on
 for building the boxes are in this
 [GitHub repository](https://github.com/maier/packer-templates/).
 
+1. (Atlas)[https://atlas.hashicorp.com/maier/boxes/alpine-3.1.3-x86_64] Alpine 3.1.3 box v1.3.0 is for VirtualBox v5, use box v1.2.0 for VirtualBox v4. The v1.2.0 (built with VirtualBox v4) has intermittent kernel panic when used with VirtualBox v5 and CPUs are set to > 1.
+2. Alpine 3.2.3 box (built with VirtualBox v5) is available on (Atlas)[https://atlas.hashicorp.com/maier/boxes/alpine-3.2.3-x86_64] now.
+
 Using `VAGRANT_LOG=info`, Vagrant's `--debug` switch, and `vb.gui = true`
 were all very useful when originally developing this guest plugin.
