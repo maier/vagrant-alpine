@@ -1,7 +1,7 @@
 # Vagrant Alpine Linux Guest
 [![Gem Version](https://badge.fury.io/rb/vagrant-alpine.svg)](http://badge.fury.io/rb/vagrant-alpine) [![Build Status](https://travis-ci.org/maier/vagrant-alpine.svg?branch=master)](https://travis-ci.org/maier/vagrant-alpine)
 
-This is a [Vagrant](http://vagrantup.com/) plugin adding support for [Alpine Linux](http://alpinelinx.org) guests.
+This is a [Vagrant](http://vagrantup.com/) plugin adding support for [Alpine Linux](http://alpinelinux.org) guests.
 
 > **NOTE:** The vagrant-alpine plugin requires Vagrant 1.7+
 
