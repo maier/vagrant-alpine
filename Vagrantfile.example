@@ -46,4 +46,10 @@ Vagrant.configure(2) do |config|
     # vb.gui = true
   end
 
+  # Enabling provisioning - run shell script to upate
+  # installed alpine.
+  # config.vm.provision 'shell', inline: <<-SHELL
+  #   apk update && apk upgrade
+  # SHELL
+
 end
