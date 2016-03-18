@@ -14,6 +14,10 @@ This is a [Vagrant](http://vagrantup.com/) plugin adding support for [Alpine Lin
 * RSync detection and installation
 * NFS client installation
 
+## Changes
+
+* v0.2.0 - add `apk update` and `apk add --upgrade` to nfs client install
+
 ## Installation
 
 ```
@@ -22,7 +26,21 @@ $ vagrant plugin install vagrant-alpine
 
 ## Usage
 
+```sh
+$ vagrant init maier/alpine-3.3.1-x86_64
+$ vagrant up
 ```
+
+or 
+
+```sh
+$ vagrant init maier/alpine-3.2.3-x86_64
+$ vagrant up
+```
+
+or 
+
+```sh
 $ vagrant init maier/alpine-3.1.3-x86_64
 $ vagrant up
 ```

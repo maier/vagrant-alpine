@@ -17,7 +17,8 @@ describe 'VagrantPlugins::GuestAlpine::Cap::NFSClient' do
   end
 
   it 'should install nfs client' do
-    communicator.should_receive(:sudo).with('apk add nfs-utils')
+    communicator.should_receive(:sudo).with('apk update')
+    communicator.should_receive(:sudo).with('apk add --upgrade nfs-utils')
     communicator.should_receive(:sudo).with('rc-update add rpc.statd')
     communicator.should_receive(:sudo).with('rc-service rpc.statd start')
 

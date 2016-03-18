@@ -12,10 +12,14 @@ Gem::Specification.new do |spec|
   spec.email         = ['maier@users.noreply.github.com']
 
   spec.summary       = 'Enables Vagrant to manage Alpine Linux Guests.'
-  spec.description   = 'Enables Vagrant to manage Alpine Linux Guests.'
+  spec.description   = <<-EOF
+    Vagrant support for Alpine Linux Guests.
+    Features include: Detection, Set hostname, Configure networking DHCP or static,
+    Halt/Shutdown the guest, RSync detection and installation, NFS client installation.
+  EOF
   spec.homepage      = 'https://github.com/maier/vagrant-alpine'
 
-  spec.add_development_dependency 'rake', '~> 10.4.2'
+  spec.add_development_dependency 'rake', '~> 10.4', '>= 10.4.2'
   spec.add_development_dependency 'rspec-core', '~> 2.14'
   spec.add_development_dependency 'rspec-expectations', '~> 2.14'
   spec.add_development_dependency 'rspec-mocks', '~> 2.14'

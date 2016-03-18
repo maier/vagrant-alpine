@@ -10,4 +10,6 @@
 Vagrantfile
 .vagrant
 TODO.md
+NOTES.md
+*.gem
 
