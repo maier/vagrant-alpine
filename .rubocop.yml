@@ -1,4 +1,6 @@
+Style/IndentationWidth:
+    Width: 4
 Metrics/LineLength:
-  Enabled: false
+    Enabled: false
 Documentation:
-  Enabled: false
+    Enabled: false
