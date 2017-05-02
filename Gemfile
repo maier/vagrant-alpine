@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gemspec
+# gemspec
 
 group :development do
   gem 'vagrant', git: 'https://github.com/mitchellh/vagrant.git'
@@ -12,5 +12,6 @@ end
 
 group :test do
   gem 'rake', '< 11.0'
+  gem 'rspec'
   gem 'rubocop'
 end

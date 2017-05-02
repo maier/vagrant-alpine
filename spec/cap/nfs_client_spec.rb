@@ -53,9 +53,7 @@ describe 'VagrantPlugins::GuestAlpine::Cap::NFSClient' do
             |     exit 1
             | fi
         EOS
-        communicator.should_receive(:sudo).with(x)
-        # "                        # work around defunct repository in configuration\n                        # box: maier/apline-3.3\n                        repo_file=\"/etc/apk/repositories\"\n                        if [ $(grep -c \"repos.dfw.lax-noc.com\" $repo_file) -ne 0 ]; then\n   repo_file_bak=\"${repo_file}.orig\"\n   echo \"updating repositories\"\n   cp $repo_file $repo_file_bak\n   sed -e 's/repos.dfw.lax-noc.com/dl-cdn.alpinelinux.org/' $repo_file_bak > $repo_file\n                        fi\n\n                        echo \"updating repository indices\"\n                        apk update\n                        if [ $? -ne 0 ]; then\n   exit 1\n                        fi\n\n                        echo \"installing nfs-utils\"\n                        apk add --upgrade nfs-utils\n                        if [ $? -ne 0 ]; then\n   exit 1\n                        fi\n\n                        echo \"installing rpc.statd\"\n                        rc-update add rpc.statd\n                        if [ $? -ne 0 ]; then\n   exit 1\n                        fi\n\n                        echo \"starting rpc.statd service\"\n                        rc-service rpc.statd start\n                        if [ $? -ne 0 ]; then\n   exit 1\n                        fi\n")
-
+        expect(communicator).to receive(:sudo).with(x)
         allow_message_expectations_on_nil
         described_class.nfs_client_install(machine)
     end
