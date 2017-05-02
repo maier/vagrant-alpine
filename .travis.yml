@@ -6,7 +6,7 @@ language: ruby
 #  - gem uninstall bundler --all --executables
 #  - gem install bundler --version '< 1.7.0'
 rvm:
-  - 2.2.0
+  - 2.2.3
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

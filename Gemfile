@@ -11,7 +11,6 @@ group :plugins do
 end
 
 group :test do
-  gem 'rake'
+  gem 'rake', '< 11.0'
   gem 'rubocop'
 end
-
