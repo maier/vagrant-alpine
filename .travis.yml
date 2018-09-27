@@ -1,7 +1,7 @@
 language: ruby
 before_install:
-  - gem uninstall bundler --all --executables
-  - gem install bundler --version '~> 1.7.0'
+#  - gem uninstall bundler --all --executables
+#  - gem install bundler --version '~> 1.7.0'
 #  - sudo apt-get update -qq
 #  - sudo apt-get install -qq -y bsdtar
 #  - rvm @global do gem uninstall bundler --all --executables
