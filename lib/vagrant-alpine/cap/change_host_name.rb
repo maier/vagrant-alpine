@@ -67,7 +67,7 @@ module VagrantPlugins
         end
 
         def update_mailname
-          sudo('hostname --fqdn > /etc/mailname')
+          sudo('hostname -f > /etc/mailname')
         end
 
         def renew_dhcp
