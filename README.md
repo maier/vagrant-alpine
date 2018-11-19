@@ -16,6 +16,7 @@ This is a [Vagrant](http://vagrantup.com/) plugin adding support for [Alpine Lin
 
 ## Changes
 
+* v0.4.0 - updates for alpine 3.8+
 * v0.3.0 - update to fix defunct alpine apk repository in maier/alpine-3.3* boxes so that nfs client will install correctly.
 * v0.2.0 - add `apk update` and `apk add --upgrade` to nfs client install
 
