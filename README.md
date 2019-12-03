@@ -5,6 +5,10 @@ This is a [Vagrant](http://vagrantup.com/) plugin adding support for [Alpine Lin
 
 > **NOTE:** The vagrant-alpine plugin requires Vagrant 1.7+
 
+**This plugin is now [part of Vagrant core](https://github.com/hashicorp/vagrant/pull/10975)
+as of Vagrant 2.2.6.  It is recommended that you uninstall the vagrant-alpine
+plugin if you are using Vagrant 2.2.6 or above.**
+
 ## Features
 
 * Detection
